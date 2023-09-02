@@ -892,3 +892,5 @@ address {
 .offers-list-link:focus .overlay-text {
     transform: translatey(0);
 }
+
+/* <script src="./js/modal.js"></script> */
