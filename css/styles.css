@@ -198,7 +198,7 @@ address {
     margin-bottom: 16px;
 }
 
-/* hw 4 footer */
+
 .footer-container {
     display: flex;
     align-items: baseline;
@@ -293,8 +293,6 @@ address {
     margin: 0;
     padding: 0;
     height: 40px;
-    align-items: center;
-    justify-content: center;
     border-radius: 4px;
     background: var(--iris, #4D5AE5);
     display: inline-flex;
@@ -892,5 +890,3 @@ address {
 .offers-list-link:focus .overlay-text {
     transform: translatey(0);
 }
-
-/* <script src="./js/modal.js"></script> */
