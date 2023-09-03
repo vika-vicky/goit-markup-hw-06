@@ -50,6 +50,7 @@ ul {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 /* phone screen */
@@ -58,7 +59,6 @@ img {
     max-width: 428px;
     padding: 0 16px;
     margin: 0 auto;
-    /* border: red 1px solid; */
 }
 
 /* tablet-screen */
@@ -358,12 +358,33 @@ address {
     max-width: 100%;
     align-items: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/hero4/people-office-hero.jpg);
+            rgba(46, 47, 66, 0.7)), url('../images/hero-mobile@2x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
 }
+
+@media only screen and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url('../images/hero-mobile@2x.jpg');
+            }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
+        }
+  }
+
+  @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url('../images/people-office\ 1@2x.jpg');
+            }
+  }
 
 @media only screen and (min-width: 1558px) {
     .hero-section {
@@ -371,7 +392,6 @@ address {
       max-width: 1440px;
     }
   }
-
 
 .page-header {
     font-size: 56px;
