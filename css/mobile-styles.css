@@ -1202,3 +1202,119 @@ address {
         padding-left: 120px;
     }
 }
+
+
+
+/* portfolio */
+/* filter buttons */
+.buttons-container {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.portfolio-second-level-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.portfolio-paragraph {
+    color: var(--slate);
+}
+
+.filter-buttons-section {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--iris);
+    background-color: var(--cloud);
+    cursor: pointer;
+    border-radius: 4px;
+    border: var(--cornflower) 1px solid;
+    padding: 12px 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-buttons-section:hover,
+.filter-buttons-section:focus {
+    color: #FFFFFF;
+    background-color: #404BBF;
+    /* hw 3 */
+    border: 1px solid transparent;
+    /* hw 4 */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+/* offers */
+.offers-with-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.offers-list-item {
+    width: calc((100% - 48px) / 3);
+    position: relative;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offers-list-link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offers-list-link:hover,
+.offers-list-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.apps-from-the-list {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-second-level-header {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.text-under-offer {
+    padding: 32px 16px;
+    align-self: stretch;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.overlay-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+    padding: 40px 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris);
+    transform: translatey(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offers-list-link:hover .overlay-text,
+.offers-list-link:focus .overlay-text {
+    transform: translatey(0);
+}
