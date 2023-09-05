@@ -336,7 +336,7 @@ address {
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
     .address-list {
         display: flex;
         flex-direction: row;
@@ -390,7 +390,7 @@ address {
             }
   }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
     .hero-section {
       padding: 188px 0;
       max-width: 1440px;
@@ -421,7 +421,7 @@ address {
   }
 }
 
-@media only screen and (min-width: 1440) {
+@media only screen and (min-width: 1158px) {
     .page-header {
       margin: 0 auto 48px;
     }
@@ -702,7 +702,7 @@ address {
     }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1440px) {
     .pillar-icon-container {
         display: none;
     }
@@ -775,7 +775,7 @@ address {
 
 /* what are we doing */
 
-@media only screen and (max-width: 1439.98px) {
+@media only screen and (max-width: 1157px) {
     .what-we-do-section {
         display: none;
     }
@@ -935,7 +935,7 @@ letter-spacing: 0.02em;
 
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
     .our-customers {
         padding: 120px 0;
     }
@@ -970,7 +970,7 @@ letter-spacing: 0.02em;
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
     .customers-list {
         flex-wrap: nowrap;
         gap: 24px;
@@ -1041,7 +1041,7 @@ letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
     .footer-logo {
         display: inline-block;
         margin-bottom: 16px;
@@ -1102,7 +1102,7 @@ letter-spacing: 0.02em;
     width: 100%;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
     .footer-form {
         padding-left: 80px;
         margin: 0;
@@ -1128,7 +1128,7 @@ letter-spacing: 0.02em;
     gap: 16px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
     .subscribe-list {
         gap: 24px;
     }
@@ -1211,7 +1211,7 @@ letter-spacing: 0.02em;
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
     .footer-container {
         width: 100%;
         flex-wrap: nowrap;
