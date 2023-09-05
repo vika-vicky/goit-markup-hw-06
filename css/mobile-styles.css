@@ -113,6 +113,10 @@ img {
     align-items: center;
 }
 
+.current {
+    color: #404bbf;
+    position: relative;
+}
 
 /* here */
 
@@ -218,7 +222,7 @@ img {
 
 .mobile-address-pn {
     color: var(--iris);
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 700;
 }
 
@@ -231,7 +235,7 @@ img {
   .mobile-menu-socials {
     display: flex;
     flex-direction: row;
-    gap: 56px;
+    gap: 26px;
   }
 
 /* navigation */
@@ -286,24 +290,24 @@ nav .logo {
     padding: 24px 0;
     /* hw 4 */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    color: #404bbf;
     display: inline-block;
 }
 
-.menu-item::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-    width: 100%;
+.current {
+    color: #404bbf;
+    position: relative;
 }
 
-.menu-item:active {
-    text-decoration: underline;
+.current::after {
+        width: 100%;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color: #404bbf;
+        border-radius: 2px;
+        transition: border-radius 2px;
 }
 
 /* address */
@@ -332,7 +336,7 @@ address {
     }
 }
 
-@media only screen and (min-width: 1558px) {
+@media only screen and (min-width: 1440px) {
     .address-list {
         display: flex;
         flex-direction: row;
@@ -386,7 +390,7 @@ address {
             }
   }
 
-@media only screen and (min-width: 1558px) {
+@media only screen and (min-width: 1440px) {
     .hero-section {
       padding: 188px 0;
       max-width: 1440px;
@@ -417,7 +421,7 @@ address {
   }
 }
 
-@media only screen and (min-width: 1558px) {
+@media only screen and (min-width: 1440) {
     .page-header {
       margin: 0 auto 48px;
     }
@@ -481,6 +485,12 @@ address {
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .modal {
+    width: 320px;
+  }
 }
 
 .modal-close-button {
@@ -692,7 +702,7 @@ address {
     }
 }
 
-@media (max-width: 1557px) {
+@media (max-width: 1439px) {
     .pillar-icon-container {
         display: none;
     }
@@ -762,9 +772,10 @@ address {
     }
 }
 
+
 /* what are we doing */
 
-@media only screen and (max-width: 1557.98px) {
+@media only screen and (max-width: 1439.98px) {
     .what-we-do-section {
         display: none;
     }
@@ -860,6 +871,14 @@ address {
     padding: 32px 0;
 }
 
+.level-three-header {
+    font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.02em;
+}
+
 .our-team-item-title {
     margin-bottom: 8px;
     text-align: center;
@@ -867,6 +886,12 @@ address {
 
 .our-team-list-item-text {
     text-align: center;
+}
+
+.team-paragraph {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 400;
 }
 
 /* soc media */
@@ -910,7 +935,7 @@ address {
 
 }
 
-@media only screen and (min-width: 1558px) {
+@media only screen and (min-width: 1440px) {
     .our-customers {
         padding: 120px 0;
     }
@@ -945,7 +970,7 @@ address {
     }
 }
 
-@media only screen and (min-width: 1558px) {
+@media only screen and (min-width: 1440px) {
     .customers-list {
         flex-wrap: nowrap;
         gap: 24px;
@@ -1016,7 +1041,7 @@ address {
     text-transform: uppercase;
 }
 
-@media only screen and (min-width: 1558px) {
+@media only screen and (min-width: 1440px) {
     .footer-logo {
         display: inline-block;
         margin-bottom: 16px;
@@ -1077,7 +1102,7 @@ address {
     width: 100%;
 }
 
-@media only screen and (min-width: 1558px) {
+@media only screen and (min-width: 1440px) {
     .footer-form {
         padding-left: 80px;
         margin: 0;
@@ -1103,7 +1128,7 @@ address {
     gap: 16px;
 }
 
-@media only screen and (min-width: 1558px) {
+@media only screen and (min-width: 1440px) {
     .subscribe-list {
         gap: 24px;
     }
@@ -1157,10 +1182,6 @@ address {
     background-color: var(--ocean);
 }
 
-.paper-plane {
-    margin-left: 16px;
-}
-
 @media only screen and (min-width: 768px) {
     .footer-container {
         width: 584px;
@@ -1190,7 +1211,7 @@ address {
     }
 }
 
-@media only screen and (min-width: 1558px) {
+@media only screen and (min-width: 1440px) {
     .footer-container {
         width: 100%;
         flex-wrap: nowrap;
